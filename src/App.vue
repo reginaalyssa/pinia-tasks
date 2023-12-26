@@ -9,13 +9,13 @@
       <button @click="filter = 'Faves'">Fave Tasks</button>
     </nav>
     <div class="task-list" v-if="filter === 'All'">
-      <p>All Tasks</p>
+      <p>You have {{ tasksStore.totalCounts }} tasks left to do</p>
       <div v-for="task in tasksStore.tasks">
         <TaskDetails :task="task" />
       </div>
     </div>
     <div class="task-list" v-if="filter === 'Faves'">
-      <p>Fave Tasks</p>
+      <p>You have {{ tasksStore.faveCounts }} fave tasks left to do</p>
       <div v-for="task in tasksStore.faves">
         <TaskDetails :task="task" />
       </div>
