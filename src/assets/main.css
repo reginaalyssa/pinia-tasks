@@ -5,23 +5,26 @@ body {
   color: #444;
   margin: 0;
 }
+
 body * {
   font-family: "Poppins";
 }
 
-/* header */
+/* Header */
 header {
   text-align: center;
-  background: #e7e7e7;
+  background: #E7E7E7;
   padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header img {
   max-width: 60px;
   transform: rotate(-10deg);
 }
+
 header h1 {
   margin: 0;
   font-size: 2em;
@@ -29,4 +32,32 @@ header h1 {
   margin-left: 15px;
   color: #777;
   transform: rotate(2deg);
+}
+
+/* Task List */
+.task-list {
+  max-width: 640px;
+  margin: 20px auto;
+}
+
+.task {
+  padding: 6px 20px;
+  background: #FFFFFF;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task h3, .task .icons {
+  display: inline-block;
+}
+
+.task i {
+  font-size: 1.4em;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #BBBBBB;
 }
