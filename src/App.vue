@@ -5,7 +5,14 @@
       <h1>Pinia Tasks</h1>
     </header>
     <div class="task-list">
+      <p>All Tasks</p>
       <div v-for="task in tasksStore.tasks">
+        <TaskDetails :task="task" />
+      </div>
+    </div>
+    <div class="task-list">
+      <p>Fave Tasks</p>
+      <div v-for="task in tasksStore.faves">
         <TaskDetails :task="task" />
       </div>
     </div>
