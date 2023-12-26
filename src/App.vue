@@ -2,13 +2,19 @@
   <main>
     <header>
       <img src="./assets/pinia-logo.svg" alt="Pinia Logo" />
-      <h1>Pinia Tasks</h1>
+      <h1>{{ tasksStore.name }}</h1>
     </header>
   </main>
 </template>
 
 <script>
-  export default {
+  import { useTasksStore } from '@/stores/tasks'
 
+  export default {
+    setup() {
+      const tasksStore = useTasksStore()
+
+      return { tasksStore }
+    }
   }
 </script>

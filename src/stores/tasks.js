@@ -6,6 +6,6 @@ export const useTasksStore = defineStore('tasks', {
       { id: 1, title: "Buy milk", isFave: false },
       { id: 2, title: "Play Monopoly Deal", isFave: true }
     ],
-    name: "Task Store"
+    name: "Pinia Tasks"
   })
 })
