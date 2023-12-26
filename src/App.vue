@@ -2,7 +2,7 @@
   <main>
     <header>
       <img src="./assets/pinia-logo.svg" alt="Pinia Logo" />
-      <h1>{{ tasksStore.name }}</h1>
+      <h1>Pinia Tasks</h1>
     </header>
   </main>
 </template>
