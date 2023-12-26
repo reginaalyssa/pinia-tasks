@@ -6,13 +6,14 @@
     </header>
     <div class="task-list">
       <div v-for="task in tasksStore.tasks">
-        <p>{{ task.title }}</p>
+        <TaskDetails :task="task" />
       </div>
     </div>
   </main>
 </template>
 
 <script>
+  import TaskDetails from '@/components/TaskDetails.vue'
   import { useTasksStore } from '@/stores/tasks'
 
   export default {
@@ -20,6 +21,9 @@
       const tasksStore = useTasksStore()
 
       return { tasksStore }
+    },
+    components: {
+      TaskDetails
     }
   }
 </script>
