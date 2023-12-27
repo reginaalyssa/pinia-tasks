@@ -10,6 +10,7 @@
       </i>
       <i
         class="material-icons"
+        :class="{active: task.isFave}"
         @click="tasksStore.toggleFave(task.id)"
       >
         favorite

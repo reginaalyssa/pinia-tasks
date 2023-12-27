@@ -62,6 +62,10 @@ header h1 {
   color: #BBBBBB;
 }
 
+.task i.active {
+  color: #FF005D;
+}
+
 /* Filter Buttons */
 .filter {
   width: 640px;
