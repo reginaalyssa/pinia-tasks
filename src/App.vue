@@ -8,6 +8,9 @@
       <button @click="filter = 'All'">All Tasks</button>
       <button @click="filter = 'Faves'">Fave Tasks</button>
     </nav>
+    <div class="new-task-form">
+      <TaskForm />
+    </div>
     <div class="task-list" v-if="filter === 'All'">
       <p>You have {{ tasksStore.totalCounts }} tasks left to do</p>
       <div v-for="task in tasksStore.tasks">
@@ -24,6 +27,7 @@
 </template>
 
 <script>
+  import TaskForm from '@/components/TaskForm.vue'
   import TaskDetails from '@/components/TaskDetails.vue'
   import { useTasksStore } from '@/stores/tasks'
   import { ref } from 'vue'
@@ -37,7 +41,8 @@
       return { tasksStore, filter }
     },
     components: {
-      TaskDetails
+      TaskDetails,
+      TaskForm
     }
   }
 </script>
