@@ -19,5 +19,10 @@ export const useTasksStore = defineStore('tasks', {
     totalCounts: (state) => {
       return state.tasks.length
     }
+  },
+  actions: {
+    addTask(task) {
+      this.tasks.push(task)
+    }
   }
 })
