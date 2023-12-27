@@ -7,9 +7,14 @@
     <div class="new-task-form">
       <TaskForm />
     </div>
-    <nav class="filter">
-      <button @click="filter = 'All'">All Tasks</button>
-      <button @click="filter = 'Faves'">Fave Tasks</button>
+    <nav class="actions">
+      <div class="reset">
+        <button @click="tasksStore.$reset">Reset</button>
+      </div>
+      <div class="filters">
+        <button @click="filter = 'All'">All Tasks</button>
+        <button @click="filter = 'Faves'">Fave Tasks</button>
+      </div>
     </nav>
     <div class="loading" v-if="tasksStore.loading">Loading tasks...</div>
     <div class="task-list" v-if="filter === 'All'">
