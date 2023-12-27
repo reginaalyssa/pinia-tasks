@@ -79,3 +79,35 @@ header h1 {
   cursor: pointer;
   font-size: 1em;
 }
+
+/* New Task Form */
+.new-task-form {
+  background: #E7E7E7;
+  padding: 20px 0;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+form button {
+  background: #FFD859;
+  border: 0;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form input {
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #555555;
+  font-size: 1em;
+}

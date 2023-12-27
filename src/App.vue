@@ -4,13 +4,13 @@
       <img src="./assets/pinia-logo.svg" alt="Pinia Logo" />
       <h1>Pinia Tasks</h1>
     </header>
+    <div class="new-task-form">
+      <TaskForm />
+    </div>
     <nav class="filter">
       <button @click="filter = 'All'">All Tasks</button>
       <button @click="filter = 'Faves'">Fave Tasks</button>
     </nav>
-    <div class="new-task-form">
-      <TaskForm />
-    </div>
     <div class="task-list" v-if="filter === 'All'">
       <p>You have {{ tasksStore.totalCounts }} tasks left to do</p>
       <div v-for="task in tasksStore.tasks">
