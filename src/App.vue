@@ -11,6 +11,7 @@
       <button @click="filter = 'All'">All Tasks</button>
       <button @click="filter = 'Faves'">Fave Tasks</button>
     </nav>
+    <div class="loading" v-if="tasksStore.loading">Loading tasks...</div>
     <div class="task-list" v-if="filter === 'All'">
       <p>You have {{ tasksStore.totalCounts }} tasks left to do</p>
       <div v-for="task in tasksStore.tasks">

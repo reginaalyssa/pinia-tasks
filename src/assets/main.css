@@ -115,3 +115,14 @@ form input {
   color: #555555;
   font-size: 1em;
 }
+
+/* Loading Indicator */
+.loading {
+  max-width: 640px;
+  border: 1px solid #FFD859;
+  background: #FFE9A0;
+  color: #3A3A3A;
+  padding: 5px 0;
+  text-align: center;
+  margin: 30px auto;
+}
