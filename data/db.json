@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Finish Pinia Crash Course",
+      "isFave": true
+    },
+    {
+      "id": 2,
+      "title": "Setup Nookscape API",
+      "isFave": true
+    },
+    {
+      "id": 3,
+      "title": "Refill Water",
+      "isFave": false
+    },
+    {
+      "id": 4,
+      "title": "Find Short Term Rent",
+      "isFave": false
+    }
+  ]
+}
