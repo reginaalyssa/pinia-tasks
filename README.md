@@ -1,6 +1,6 @@
-# pinia-tasks
+# Pinia Tasks Web App
 
-This template should help get you started developing with Vue 3 in Vite.
+Built using Vue 3 in Vite following the [Pinia Crash Course](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hp28dYyYBy3xoOdoeNw-hD) tutorial of Net Ninja with some minor improvements in an attempt to familiarize myself with Pinia (given that I only knew Vuex beforehand).
 
 ## Recommended IDE Setup
 
