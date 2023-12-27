@@ -36,6 +36,8 @@
     setup() {
       const tasksStore = useTasksStore()
 
+      tasksStore.getTasks()
+
       const filter = ref("All")
 
       return { tasksStore, filter }
