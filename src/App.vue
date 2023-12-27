@@ -19,13 +19,13 @@
     <div class="loading" v-if="tasksStore.loading">Loading tasks...</div>
     <div class="task-list" v-if="filter === 'All'">
       <p>You have {{ tasksStore.totalCounts }} tasks left to do</p>
-      <div v-for="task in tasksStore.tasks">
+      <div v-for="task in tasksStore.tasks" :key="task.id">
         <TaskDetails :task="task" />
       </div>
     </div>
     <div class="task-list" v-if="filter === 'Faves'">
       <p>You have {{ tasksStore.faveCounts }} fave tasks left to do</p>
-      <div v-for="task in tasksStore.faves">
+      <div v-for="task in tasksStore.faves" :key="task.id">
         <TaskDetails :task="task" />
       </div>
     </div>
